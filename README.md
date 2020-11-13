@@ -41,5 +41,23 @@ for i in url2:
 - Using a list word list, I crawled ```twitter``` for subdomains that would respond if it existed.
 
 ```python
+#------------"""SUBDOMAIN Finder"""---------------#
 
+target_url1 = "twitter.com"
+
+# Opening wordlist location using "with open()", specifying reading mode ('r') and storing value of search as 'file'
+with open("C:\\Users\\--D---\\PycharmProjects\\modules_scripts\\wordlist\\sub_word_list.txt", 'r') as file:
+    # iterating over each line within file
+    for line in file:
+        # stripping all white spaces that may be included in the line
+        word = line.strip()
+        # concatenating result of word var, full stop and target url 1 variable
+        test_url = word + "." + target_url1
+        # storing request
+        response = request(test_url)
+
+        if response:
+            print(f"Subdomain: {test_url}, exists.")
+        else:
+            print(f"{test_url} >> no response.")
 ```
