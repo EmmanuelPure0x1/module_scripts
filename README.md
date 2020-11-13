@@ -34,7 +34,7 @@ for i in url2:
     except requests.exceptions.ConnectionError:
         print(i, "- is an invalid URL.")
 ```
-- **Code output**
+- **Code output:**
 
 ![status_code_resp](output/status_code_resp.PNG)
 
@@ -62,3 +62,7 @@ with open("C:\\Users\\--D---\\PycharmProjects\\modules_scripts\\wordlist\\sub_wo
         else:
             print(f"{test_url} >> no response.")
 ```
+- **Code output:**
+
+![subdomain output](output/subdomain_query.PNG)
+
