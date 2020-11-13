@@ -34,4 +34,12 @@ for i in url2:
     except requests.exceptions.ConnectionError:
         print(i, "- is an invalid URL.")
 ```
+- **Code output**
 ![status_code_resp](output/status_code_resp.PNG)
+
+2. Subdomain finder
+- Using a list word list, I crawled ```twitter``` for subdomains that would respond if it existed.
+
+```python
+
+```
