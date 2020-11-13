@@ -23,7 +23,7 @@ url = "www.twitter.com"
 target_url1 = "twitter.com"
 
 # Opening wordlist location using "with open()", specifying reading mode ('r') and storing value of search as 'file'
-with open("C:\\Users\\--D---\\PycharmProjects\\modules_scripts\\wordlist\\sub_word_list.txt", 'r') as file:
+with open("C:\\Users\\D--\\PycharmProjects\\modules_scripts\\wordlist\\sub_word_list.txt", 'r') as file:
     # iterating over each line within file
     for line in file:
         # stripping all white spaces that may be included in the line
