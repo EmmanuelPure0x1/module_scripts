@@ -34,3 +34,4 @@ for i in url2:
     except requests.exceptions.ConnectionError:
         print(i, "- is an invalid URL.")
 ```
+![status_code_resp](output/status_code_resp.PNG)
