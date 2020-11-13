@@ -18,7 +18,7 @@ try:
     # var created. A get request is concatenating https in front of the URL variable.
     get_response = requests.get("https://" + url)
     # Variable response printed.
-    print(get_response)
+    print(f"This is {url}'s response:", get_response)
 
 # Similar to else, it checks to see if the requests module has found and exception of connection error type.
 # This is a test to see whether the try was successful.
@@ -29,7 +29,7 @@ except requests.exceptions.ConnectionError:
 for i in url2:
     try:
         respond = requests.get("https://" + i)
-        print(respond)
+        print(f"This is {i}'s response:", respond)
 
     except requests.exceptions.ConnectionError:
         print(i, "- is an invalid URL.")
